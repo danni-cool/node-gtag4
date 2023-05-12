@@ -1,0 +1,42 @@
+{
+  "name": "node-gtag",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danni-cool/node-gtag.git"
+  },
+  "author": "daniel",
+  "version": "0.1.0",
+  "keywords": [
+    "Google Analytics 4",
+    "GA4",
+    "GTAG",
+    "Node GTAG"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    ""
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "start": "tsc -w",
+    "build": "rm -rf dist &&tsc",
+    "release": "standard-version",
+    "postrelease": "node ./script/changelog2readme.js"
+  },
+  "dependencies": {
+    "lcid": "^4.0.1",
+    "node-machine-id": "^1.1.12",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.2",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.0.4"
+  }
+}

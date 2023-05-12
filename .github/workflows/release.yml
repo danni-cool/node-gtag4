@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate changelog
+        run: npm run release
+
+      - name: Build project
+        run: npm run build
+
+      # - run: npm ci
+      # - run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+
+      - name: Tag release
+        run: |
+          git config --global user.email "contact@danni.cool"
+          git config --global user.name "gitHubCi"
+          git tag v$(node -p "require('./package.json').version")
+          git add .
+          git commit -m "Commit changes for release"
+          git push --tags
