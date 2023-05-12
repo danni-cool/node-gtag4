@@ -5,6 +5,9 @@
 
 ![](https://cdn.jsdelivr.net/gh/danni-cool/blog.danni.cool/cdn/image/logo-nodeGtag.png)
 
+ ![](https://img.shields.io/github/actions/workflow/status/danni-cool/node-gtag4/release.yml) ![](https://img.shields.io/npm/v/node-gtag4)
+
+
 
 node-gtag4 是一个功能精简，不依赖浏览器 API 的 Node 版本 Google Analytics SDK，数据可以上报 [Google Analytics 4](https://analytics.google.com/analytics/web/) 到并呈现在管理后台，此SDK初衷主要是为了帮助一些早期的工具项目以较低的成本收集使用数据并且改进自己的产品。
 
