@@ -24,10 +24,11 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # - run: npm ci
-      # - run: npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+          
       - name: commit and tag release
         run: |
           git config --global user.email "contact@danni.cool"
