@@ -7,6 +7,7 @@ on:
 
 jobs:
   publish:
+    if: contains(github.event.head_commit.message, '[skip ci]') == false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -24,16 +25,19 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - run: npm ci
-      - run: npm publish
+      - name: publish to npm
+        run: |
+          npm ci
+          npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+            NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
           
       - name: commit and tag release
         run: |
           git config --global user.email "contact@danni.cool"
           git config --global user.name "gitHubCi"
-          git tag v$(node -p "require('./package.json').version")
           git add .
           git commit -m "Commit changes for release"
-          git push origin master &&git push --tags
+          git push origin master
+          git tag v$(node -p "require('./package.json').version")
+          git push --tags
