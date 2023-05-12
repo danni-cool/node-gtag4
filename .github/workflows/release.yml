@@ -24,16 +24,11 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # - run: npm ci
-      # - run: npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-
-      - name: Tag release
+      - name: commit and tag release
         run: |
           git config --global user.email "contact@danni.cool"
           git config --global user.name "gitHubCi"
           git tag v$(node -p "require('./package.json').version")
           git add .
           git commit -m "Commit changes for release"
-          git push --tags
+          git push origin master &&git push --tags
