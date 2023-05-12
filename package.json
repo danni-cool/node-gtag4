@@ -1,8 +1,8 @@
 {
-  "name": "node-gtag",
+  "name": "node-gtag4",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danni-cool/node-gtag.git"
+    "url": "https://github.com/danni-cool/node-gtag4.git"
   },
   "author": "daniel",
   "version": "0.1.1",

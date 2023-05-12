@@ -1,4 +1,4 @@
-# node-gtag
+# node-gtag4
 
  A lightweight, browser api-free and Node.js version of the Google Analytics SDK, the data reporting is accepted by Google Analytics 4.
  The primary purpose of this SDK is to assist early-stage tool projects in collecting usage data and improving their products at a lower cost.
@@ -6,7 +6,7 @@
 ![](https://cdn.jsdelivr.net/gh/danni-cool/blog.danni.cool/cdn/image/logo-nodeGtag.png)
 
 
-node-gtag 是一个功能精简，不依赖浏览器 API 的 Node 版本 Google Analytics SDK，数据可以上报 [Google Analytics 4](https://analytics.google.com/analytics/web/) 到并呈现在管理后台，此SDK初衷主要是为了帮助一些早期的工具项目以较低的成本收集使用数据并且改进自己的产品。
+node-gtag4 是一个功能精简，不依赖浏览器 API 的 Node 版本 Google Analytics SDK，数据可以上报 [Google Analytics 4](https://analytics.google.com/analytics/web/) 到并呈现在管理后台，此SDK初衷主要是为了帮助一些早期的工具项目以较低的成本收集使用数据并且改进自己的产品。
 
 # Data Results
 
@@ -22,13 +22,13 @@ Realtime view (实时视图) | ![](https://cdn.jsdelivr.net/gh/danni-cool/blog.d
 # install
 
 ```bash
-npm i node-gtag
+npm i node-gtag4
 ```
 
 # usage
 
 ```bash
-const ga = require('node-gtag')('G-xxxxxx')
+const ga = require('node-gtag4')('G-xxxxxx')
 
 // report pv
 ga.pv('appFunction1')
