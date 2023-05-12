@@ -23,7 +23,7 @@ module.exports = {
       type: 'json',
     },
   ],
-  header: '# Node-Gtag Changelog\n\n',
+  header: '',
   commitUrlFormat: '{{host}}/{{owner}}/{{repository}}/commit/{{hash}}',
   compareUrlFormat: '{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}',
   skip: {
