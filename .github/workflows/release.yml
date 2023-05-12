@@ -28,8 +28,6 @@ jobs:
       # - run: npm publish
       #   env:
       #     NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-
-      - name: Tag release
       - name: commit and tag release
         run: |
           git config --global user.email "contact@danni.cool"
