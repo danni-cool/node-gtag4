@@ -7,28 +7,27 @@
 
  ![](https://img.shields.io/github/actions/workflow/status/danni-cool/node-gtag4/release.yml) ![](https://img.shields.io/npm/v/node-gtag4) ![](https://img.shields.io/npm/dw/node-gtag4)
 
-
-
 node-gtag4 是一个功能精简，不依赖浏览器 API 的 Node 版本 Google Analytics SDK，数据可以上报 [Google Analytics 4](https://analytics.google.com/analytics/web/) 到并呈现在管理后台，此SDK初衷主要是为了帮助一些早期的工具项目以较低的成本收集使用数据并且改进自己的产品。
+
 
 # Data Results
 
 > - ⚠️ notice: ga4's report view is a delayed data which appeared after 24 hours, realtime view's data appeared in about 30s and stayed for 30 mins. (from my test)
 > - ⚠️ 注意：ga4 的报告视图是有24小时延迟计算的数据，这意味着上报后，这块数据不会立即呈现,实时视图的数据在30s内会能看到结果，但是只保留30分钟。（经过我的测试）
 
-type | screen shot |
+data type | screenshot |
 --- | --- |
-Data view (报告视图) | ![](https://cdn.jsdelivr.net/gh/danni-cool/blog.danni.cool/cdn/image/ga-effect-screenshot.png) | 
-Realtime view (实时视图) | ![](https://cdn.jsdelivr.net/gh/danni-cool/blog.danni.cool/cdn/image/ga-realtime-screenshot.png) | 
+data view (报告视图) | ![](https://cdn.jsdelivr.net/gh/danni-cool/blog.danni.cool/cdn/image/ga-effect-screenshot.png) | 
+realtime view (实时视图) | ![](https://cdn.jsdelivr.net/gh/danni-cool/blog.danni.cool/cdn/image/ga-realtime-screenshot.png) | 
 
 
-# install
+# Install
 
 ```bash
 npm i node-gtag4
 ```
 
-# usage
+# Usage
 
 ```bash
 const ga = require('node-gtag4')('G-xxxxxx')
@@ -42,10 +41,13 @@ ga.event({category: 'myCategory', action: 'customAction', label:'label', value: 
 ```
 
 
-# license
+# License
 
 MIT
 
+# Plan
+
+[TODOS](https://github.com/danni-cool/node-gtag4/issues/1)
 
 # Changelog
 
