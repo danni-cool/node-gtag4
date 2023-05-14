@@ -5,7 +5,7 @@
 
 ![](https://cdn.jsdelivr.net/gh/danni-cool/blog.danni.cool/cdn/image/logo-nodeGtag.png)
 
- ![](https://img.shields.io/github/actions/workflow/status/danni-cool/node-gtag4/release.yml) ![](https://img.shields.io/npm/v/node-gtag4)
+ ![](https://img.shields.io/github/actions/workflow/status/danni-cool/node-gtag4/release.yml) ![](https://img.shields.io/npm/v/node-gtag4) ![](https://img.shields.io/npm/dw/node-gtag4)
 
 
 
