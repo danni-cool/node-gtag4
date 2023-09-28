@@ -8,5 +8,10 @@ export default function nodeGtag4(trancingTag:string) {
   }
 }
 
+
+const ga = nodeGtag4('G-LPT0Y85B0J')
+ga.pv('appFunction1')
+ga.event({category: 'myCategory', action: 'customAction', label:'label', value: 1})
 /** not recommend but compatible */
 module.exports = nodeGtag4
+

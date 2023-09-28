@@ -3,7 +3,7 @@
  A lightweight, browser api-free and Node.js version of the Google Analytics SDK, the data reporting is accepted by Google Analytics 4.
  The primary purpose of this SDK is to assist early-stage tool projects in collecting usage data and improving their products at a lower cost.
 
-![](https://cdn.jsdelivr.net/gh/danni-cool/blog.danni.cool/cdn/image/logo-nodeGtag.png)
+![](https://cdn.jsdelivr.net/gh/danni-cool/danni-cool@cdn/image/logo-nodeGtag.png)
 
  ![](https://img.shields.io/github/actions/workflow/status/danni-cool/node-gtag4/release.yml) ![](https://img.shields.io/npm/v/node-gtag4) ![](https://img.shields.io/npm/dw/node-gtag4)
 
@@ -35,8 +35,8 @@ ga.event({category: 'myCategory', action: 'customAction', label:'label', value: 
 
 data type | screenshot |
 --- | --- |
-data view (报告视图) | ![](https://cdn.jsdelivr.net/gh/danni-cool/blog.danni.cool/cdn/image/ga-effect-screenshot.png) | 
-realtime view (实时视图) | ![](https://cdn.jsdelivr.net/gh/danni-cool/blog.danni.cool/cdn/image/ga-realtime-screenshot.png) | 
+data view (报告视图) | ![](https://cdn.jsdelivr.net/gh/danni-cool/danni-cool@cdn/image/ga-effect-screenshot.png) | 
+realtime view (实时视图) | ![](https://cdn.jsdelivr.net/gh/danni-cool/danni-cool@cdn/image/ga-realtime-screenshot.png) | 
 
 # Plan
 
